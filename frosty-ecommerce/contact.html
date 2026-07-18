@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Frosty & Co.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="index.html" class="logo"><span class="mark"></span> Frosty & Co.</a>
+      <ul class="navlinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <a href="cart.html" class="cart-btn">
+        🛒 Cart
+        <span class="cart-badge hidden" id="cartBadge">0</span>
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:0;">
+  <div class="wrap">
+    <span class="eyebrow">We'd love to hear from you</span>
+    <h1>Get in <span class="accent">touch.</span></h1>
+    <p>Questions about an order, bulk requests, or just want to say hi? Send us a message.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="contact-layout">
+      <div class="form-card">
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="cName">Name</label>
+            <input type="text" id="cName" placeholder="Your name">
+            <div class="field-error" id="err-cName">Please enter your name.</div>
+          </div>
+          <div class="form-group">
+            <label for="cEmail">Email</label>
+            <input type="email" id="cEmail" placeholder="you@example.com">
+            <div class="field-error" id="err-cEmail">Please enter a valid email.</div>
+          </div>
+          <div class="form-group">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" rows="5" placeholder="How can we help?"></textarea>
+            <div class="field-error" id="err-cMessage">Please enter a message.</div>
+          </div>
+          <button type="submit" class="btn btn-teal" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Store details</h3>
+        <div class="row"><span class="ic">📍</span><span>12 Marina Lane, Chennai, Tamil Nadu 600001</span></div>
+        <div class="row"><span class="ic">📞</span><span>+91 98765 43210</span></div>
+        <div class="row"><span class="ic">✉️</span><span>hello@frostyandco.example</span></div>
+        <div class="row"><span class="ic">🕐</span><span>Open daily, 11am – 11pm</span></div>
+        <div class="row"><span class="ic">🚚</span><span>Delivery available within 8km of the store</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><span class="mark"></span> Frosty & Co.</div>
+    <p>Open daily, 11am – 11pm. Made fresh every morning, delivered cold to your door.</p>
+    <div class="fine">This is a demo storefront — no real payment is processed.</div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+
+<script src="js/products.js"></script>
+<script src="js/cart-utils.js"></script>
+<script src="js/contact.js"></script>
+</body>
+</html>
